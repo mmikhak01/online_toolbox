@@ -26,6 +26,8 @@ def download_file(request):
 @csrf_exempt
 def index(request):
 
+
+
     if request.method == 'POST':
         uid = request.POST.get('uid')
         script_name = request.POST.get('script_name')

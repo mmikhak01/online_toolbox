@@ -9,7 +9,10 @@ script_path = os.path.dirname(__file__)
 import requests
 from io import BytesIO
 
-url ='http://127.0.0.1:8000/online_toolbox/download_file'
+### url ='http://127.0.0.1:8000/online_toolbox/download_file'
+### we get url globaly from arcmap script
+url = '/'.join(s.strip('/') for s in [url , "/download_file"])
+
 data = {
   'filename': str(map_name) + '.lyr',
 }
