@@ -57,6 +57,6 @@ def index(request):
 
         return response
 
-    text = """Get method"""
+    text = """Get method mmm"""
     return HttpResponse(text)
 
